@@ -1,3 +1,5 @@
+import { auth } from '../firebase.config';
+
 function Home() {
   return <>Hello</>;
 }

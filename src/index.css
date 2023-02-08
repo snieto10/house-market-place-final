@@ -20,11 +20,22 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*MENU*/
@@ -60,9 +71,55 @@ a {
   border: none;
   font-weight: bold;
   font-size: 1.6rem;
+  margin: 1rem;
+  cursor: pointer;
 }
 
 .btn-orange {
   background-color: var(--color-primary);
   color: white;
+}
+
+/*LOGIN BOX*/
+
+.loginBox {
+  border: 1px solid lightgray;
+  height: 320px;
+  width: 250px;
+  margin: 0 auto;
+  border-radius: var(--border-radius);
+  font-size: 1.6rem;
+  box-shadow: 0px 1px 10px lightgray;
+}
+
+.createAccount {
+  height: 320px;
+}
+
+.loginBox_title {
+  text-align: center;
+}
+
+.loginBox_text {
+  margin-left: 2rem;
+}
+
+.loginBox_input {
+  text-align: center;
+  width: 90%;
+  height: 2.5rem;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.loginBox_inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_footer {
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0.8;
 }
